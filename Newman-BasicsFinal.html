@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Composting 101</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Composting 101</h1>
+      <hr />
+
+      <h2>What Can We Compost?</h2>
+      <ul>
+        <li>
+          <h3>🪴 Plant Matter 🪴</h3>
+          leaves, grass, plants,
+          <br />
+          <em>those dead flowers from your ex...</em>
+        </li>
+        <li>
+          <h3>📦 Former Plant Matter 📦</h3>
+          newspaper, straw, cardboard <br />
+        </li>
+        <li>
+          <h3>🍌 Kitchen Waste 🍌</h3>
+          eggshells, fruit peels, coffee / tea grounds <br />
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2>Composting Basics</h2>
+      <h4>
+        <strong>Compost</strong> is a nutrient rich, dirt-like material that
+        enriches soil and nourishes growth.
+      </h4>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/053/original/compost.jpg?1651301320"
+        ;
+        alt="Composting Diagram shows a pile of compost in the center
+      with inputs and outputs listed around the pile. Inputs include oxygen,
+      organic matter, minerals, water and microorganisms. Outputs include water,
+      heat, carbon dioxide, organic matter, minerals, water and microbes"
+      />
+      <p class="background">
+        Organic materials like food scraps and leaves decompose naturally over
+        time; while this process takes a considerable amount of time in nature,
+        we can generate the ideal composting environment very easily at home!
+        <strong
+          >Learn more about the ins and outs of composting at
+          <a
+            href="https://commongroundcompost.com/what-is-compost"
+            target="_blank"
+          >
+            Common Ground Compost.</a
+          >
+        </strong>
+      </p>
+      <button>Find a Composting Co-Op Near You</button>
+
+      <p>Built by<span> MNewman🫠</span></p>
+      <script>
+        function findCompost() {
+          let name = prompt("What is your name?");
+          let post = prompt("What is your postal / zip code?");
+          if (name.length > 0 && post.length > 0) {
+            alert(
+              "Thanks " +
+                name +
+                "! We'll contact you shortly about ♺ Composting Opportunities ♺ near you."
+            );
+          } else {
+            alert(
+              "Sorry, that data is invalid. Please refresh the page and try again. ☠️"
+            );
+          }
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", findCompost);
+      </script>
+    </div>
+  </body>
+</html>
